@@ -210,6 +210,7 @@ img {
 .home__social {
   display: flex;
   flex-direction: column;
+  margin-top: 0;
 }
 
 .home__social-icon {
@@ -415,6 +416,9 @@ img {
   .home__img {
     width: 200px;
   }
+  .home__social{
+    margin-top: 0;
+  }
 }
 
 @media screen and (min-width: 576px) {
@@ -424,6 +428,7 @@ img {
   .home__social {
     padding-top: 0;
     padding-bottom: 2.5rem;
+    margin-top: 0;
     flex-direction: row;
     align-self: flex-end;
   }
@@ -537,6 +542,7 @@ img {
   .home__social {
     padding-top: 0;
     padding-bottom: 2.5rem;
+    margin-top: 0;
     flex-direction: row;
     align-self: flex-end;
     align-items: center;
