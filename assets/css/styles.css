@@ -96,7 +96,8 @@ img {
   right: 0;
   margin: auto;
   top: 2rem;
-  background-color: var(--first-color);
+  /* background-color: var(--first-color); */
+  background-image: linear-gradient(to right, #00b4db, #0083b0);
 }
 
 .section {
@@ -164,7 +165,7 @@ img {
   height: 0.18rem;
   left: 0;
   top: 2rem;
-  background-color: var(--first-color);
+  background-image: linear-gradient(to right, #00b4db, #0083b0);
 }
 
 .nav__logo {
