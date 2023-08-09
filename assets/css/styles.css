@@ -232,7 +232,10 @@ img {
 }
 
 .home__social-icon:hover {
-  color: var(--first-color);
+  background-image: linear-gradient(to right, #00b4db, #0083b0);
+  -webkit-background-clip: text; /* For Safari */
+  background-clip: text;
+  color: transparent;
 }
 
 .home__img {
