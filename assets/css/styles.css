@@ -1,5 +1,6 @@
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
 /*===== VARIABLES CSS =====*/
 :root {
   --header-height: 3rem;
@@ -11,7 +12,7 @@
   --first-color: hsl(var(--hue-color), 89%, 60%);
   --second-color: hsl(var(--hue-color), 56%, 12%);
   /*===== Fuente y tipografia =====*/
-  --body-font:'Roboto Condensed',sans-serif;
+  --body-font:'Roboto Flex', sans-serif;
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
   --normal-font-size: .938rem;
@@ -77,7 +78,10 @@ img {
 .section-title {
   position: relative;
   font-size: var(--h2-font-size);
-  color: var(--first-color);
+  background-image: linear-gradient(to right, #00b4db, #0083b0);
+  -webkit-background-clip: text; /* For Safari */
+  background-clip: text;
+  color: transparent;
   margin-top: var(--mb-2);
   margin-bottom: var(--mb-4);
   text-align: center;
@@ -201,12 +205,16 @@ img {
 }
 
 .home__title {
+  font-family: 'Roboto Slab', serif;
   font-size: var(--big-font-size);
   margin-bottom: var(--mb-5);
 }
 
 .home__title-color {
-  color: var(--first-color);
+  background-image: linear-gradient(to right, #00b4db, #0083b0);
+  -webkit-background-clip: text; /* For Safari */
+  background-clip: text;
+  color: transparent;
 }
 
 .home__social {
@@ -244,7 +252,8 @@ img {
 /*BUTTONS*/
 .button {
   display: inline-block;
-  background-color: var(--first-color);
+  /* background-color: var(--first-color); */
+  background-image: linear-gradient(to right, #00b4db, #0083b0);
   color: #fff;
   padding: .75rem 2.5rem;
   font-weight: var(--font-semi);
@@ -304,7 +313,11 @@ img {
 .skills__icon {
   font-size: 2rem;
   margin-right: var(--mb-2);
-  color: var(--first-color);
+  /* color: var(--first-color); */
+  background-image: linear-gradient(to right, #00b4db, #0083b0);
+  -webkit-background-clip: text; /* For Safari */
+  background-clip: text;
+  color: transparent;
 }
 
 .skills__names {
@@ -316,7 +329,8 @@ img {
   position: absolute;
   left: 0;
   bottom: 0;
-  background-color: var(--first-color);
+  /* background-color: var(--first-color); */
+  background-image: linear-gradient(to right, #00b4db, #0083b0);
   height: .25rem;
   border-radius: .5rem;
   z-index: var(--z-back);
@@ -384,7 +398,7 @@ img {
 
 /* ===== FOOTER =====*/
 .footer {
-  background-color: var(--second-color);
+  background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
   color: #fff;
   text-align: center;
   font-weight: var(--font-semi);
