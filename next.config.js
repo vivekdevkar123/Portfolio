@@ -17,6 +17,7 @@ const nextConfig = {
     dest: "public",
     runtimeCaching,
   },
+  
 }
 
 module.exports = withPWA(nextConfig);
