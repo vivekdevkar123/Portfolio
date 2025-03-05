@@ -36,12 +36,11 @@ const projects = {
             title: 'CodeCollab - Real-time Collaborative Code Editor',
             description: 'CodeCollab is a cloud-based real-time collaborative code editor that enables multiple users to code together seamlessly. Utilizing WebSocket-based low-latency communication, the platform supports multi-user sessions with advanced conflict resolution algorithms and role-based access control, improving productivity for remote development teams.',
             techs: [
-                'React.js',
+                'Python',
+                'Django',
+                'Django-channel',
                 'WebSockets',
-                'Node.js',
-                'Redis',
-                'RBAC',
-                'AWS',
+                'Redis'
             ]
         },
         {
