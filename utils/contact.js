@@ -7,10 +7,7 @@ const contact = {
     button: {
         label: 'Say Hello',
         onClick: () => openLink('mailto:vivekmdevkar@gmail.com?subject=Hello')
-    },
-    designAndBuiltBy: 'Designed & Built By Vivek Devkar',
-    handleBuiltByClick: () => openLink('https://github.com/vivekdevkar123')
-
+    }
 }
 
 export default contact
