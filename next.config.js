@@ -2,17 +2,19 @@
 
 const withPWA = require("next-pwa")({
   dest: "public",
-  disable: false, // Enable PWA for production
+  disable: false, // Enable PWA in production
 });
 
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    loader: "akamai", // Use an external image loader
+    loader: "akamai", // External Image Loader (Compatible with `next export`)
     path: "",
   },
-  trailingSlash: true, // Required for GitHub Pages
+  trailingSlash: true, // Important for GitHub Pages
+  basePath: "/Portfolio", // Your GitHub repository name
+  assetPrefix: "/Portfolio/", // This will load CSS and images correctly
 };
 
 module.exports = withPWA(nextConfig);
