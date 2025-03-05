@@ -10,7 +10,8 @@ const nextConfig = {
   swcMinify: true,
   images: {
     loader: "akamai", // External Image Loader (Compatible with `next export`)
-    path: "",
+    path: "/Portfolio/", // Set the correct path prefix for GitHub Pages
+    unoptimized: true, // Important to display static images without optimization
   },
   trailingSlash: true, // Important for GitHub Pages
   basePath: "/Portfolio", // Your GitHub repository name

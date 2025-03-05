@@ -40,7 +40,7 @@ const mySelf = {
         'Unix/Linux',
         'Twilio',
     ],    
-    image: '/assets/profile1.jpg',
+    image: '/Portfolio/assets/profile1.jpg',
 }
 
 export default mySelf

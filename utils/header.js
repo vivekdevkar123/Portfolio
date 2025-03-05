@@ -16,7 +16,7 @@ const header = {
     },
     logo: {
         src: '/assets/photo-logo.png',
-        alt: 'muneebwasikhan'
+        alt: 'vivekdevkar'
     },
     handleIconClick: () => scrollTo('home'),
     handleItemSelect: (menu) => scrollTo(menu.id),
