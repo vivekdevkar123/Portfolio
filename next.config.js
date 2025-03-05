@@ -2,17 +2,17 @@
 
 const withPWA = require("next-pwa")({
   dest: "public",
-  // disable: process.env.NODE_ENV === "development", // Disable PWA in development mode
-  disable: false, // enable PWA in production mode
+  disable: false, // Enable PWA for production
 });
 
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    unoptimized: true,
+    loader: "akamai", // Use an external image loader
+    path: "",
   },
-  output: 'export', // Add this line
+  trailingSlash: true, // Required for GitHub Pages
 };
 
 module.exports = withPWA(nextConfig);
