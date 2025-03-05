@@ -1,23 +1,16 @@
 /** @type {import('next').NextConfig} */
 
-const withPWA = require("next-pwa");
-const runtimeCaching = require("next-pwa/cache");
+const withPWA = require("next-pwa")({
+  dest: "public",
+  disable: process.env.NODE_ENV === "development", // Disable PWA in development mode
+});
 
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  experimental: {
-    images: {
-      loader: 'imgix',
-      path: 'public/assets/portfolio.gif',
-      unoptimized: true,
-    },
+  images: {
+    unoptimized: true,
   },
-  pwa: {
-    dest: "public",
-    runtimeCaching,
-  },
-  
-}
+};
 
 module.exports = withPWA(nextConfig);
