@@ -11,7 +11,7 @@ const header = {
         { title: 'Contact', id: 'contact' },
     ],
     rightBtn: {
-        label: 'Curriculum Vitae | CV',
+        label: 'Get my Resume',
         onClick: () => openLink('assets/cv.pdf')
     },
     logo: {
